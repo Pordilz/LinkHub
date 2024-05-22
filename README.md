@@ -1,38 +1,31 @@
-# create-svelte
+Installation Instructions
+Clone the Repository:
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+bash
+Copy code
+git clone https://github.com/yourusername/yourrepository.git
+cd yourrepository
+Install Dependencies:
 
-## Creating a project
+bash
+Copy code
+npm install
+Set Up Firebase:
 
-If you're seeing this, you've probably already done this step. Congrats!
+Go to the Firebase console and create a new project.
+Add a web app to your project and copy the Firebase config object.
+Create a .env file in the root of your project and add the Firebase config variables:
+env
+Copy code
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+Run the Development Server:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+bash
+Copy code
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
