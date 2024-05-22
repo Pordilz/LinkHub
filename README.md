@@ -38,8 +38,8 @@ Follow these steps to set up and run the Link.hub project on your local machine.
 First, clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
-cd yourrepository
+git clone https://github.com/Pordilz/LinkHub
+cd repositoryName
 ```
 
 ### 2. Install Dependencies
