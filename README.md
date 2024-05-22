@@ -18,7 +18,6 @@ The purpose of Link.hub is to provide users with a centralized place to share th
 - **Firebase Auth**: For authentication and managing user sessions.
 - **Firestore**: For storing user data including profiles and links.
 - **Firebase Storage**: For storing user-uploaded images.
-- **Vercel**: For hosting the web application.
 
 
 
@@ -66,13 +65,13 @@ Create a .env file in the root of your project.
 Add the Firebase configuration variables to the .env file:
 
 ```env
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
-VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+FIREBASE_API_KEY=your_api_key
+FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+FIREBASE_APP_ID=your_app_id
+FIREBASE_MEASUREMENT_ID=your_measurement_id
 ```
 Replace the placeholders (your_api_key, your_project_id, etc.) with your actual Firebase configuration values.
 
