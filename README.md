@@ -60,20 +60,28 @@ In the Your apps section, click on the </> icon to add a new web app.
 Register the app and copy the Firebase config object provided.
 
 ## c. Configure Firebase in the Project
-Create a .env file in the root of your project.
 
-Add the Firebase configuration variables to the .env file:
+Add the Firebase configuration variables to the firebase.ts file:
 
-```env
-FIREBASE_API_KEY=your_api_key
-FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-FIREBASE_APP_ID=your_app_id
-FIREBASE_MEASUREMENT_ID=your_measurement_id
+```JavaScript
+// Initialize Firebase
+const firebaseConfig = {
+
+};
 ```
-Replace the placeholders (your_api_key, your_project_id, etc.) with your actual Firebase configuration values.
+Replace the placeholders with your actual Firebase configuration values.
+
+## d. Create a .env file in the root of your project.
+
+Add the Firebase service account details to the .env file
+
+```bash
+FB_PROJECT_ID=
+FB_CLIENT_EMAIL=
+FB_PRIVATE_KEY=
+```
+Replace the placeholders with your actual Service Account configuration values
+
 
 ### 4. Run the Development Server
 
